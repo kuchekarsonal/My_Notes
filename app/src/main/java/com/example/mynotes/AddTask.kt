@@ -13,14 +13,16 @@ class AddTask : AppCompatActivity() {
 
     var dbTable = "Notes"
     var id = 0
+    lateinit var  addTask :Button
+    lateinit var  cancel : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_task)
 
         //create button
-        val addTask = findViewById<Button>(R.id.btnSaveTask)
+         addTask = findViewById<Button>(R.id.btnSaveTask)
 
-        val cancel = findViewById<Button>(R.id.btnCancel)
+         cancel = findViewById<Button>(R.id.btnCancel)
 
         try {
             val bundle:Bundle = intent.extras!!
