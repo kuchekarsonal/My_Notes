@@ -12,12 +12,12 @@ import kotlin.reflect.KTypeProjection
 
 class DbManager {
 
-    var dbName = "MyNotes"
-    var dbTable = "Notes"
-    var colId = "ID"
-    var colTitle = "Title"
-    var colDes = "Description"
-    var dbVersion = 1
+    val dbName = "MyNotes"
+    val dbTable = "Notes"
+    val colId = "ID"
+    val colTitle = "Title"
+    val colDes = "Description"
+    val dbVersion = 1
 
 
 

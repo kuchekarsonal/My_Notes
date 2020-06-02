@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.row.view.shareBtn
 
 class MainActivity : AppCompatActivity() {
 
-  var  listNotes = ArrayList<Note>()
+    var  listNotes = ArrayList<Note>()
  lateinit var add :Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,6 +64,8 @@ class MainActivity : AppCompatActivity() {
 
   inner class MyNotesAdapter : BaseAdapter{
       var listNotesAdapter = ArrayList<Note>()
+
+      //nul safety
       var context : Context?= null
 
       constructor(context: Context, listNotesAdapter: ArrayList<Note>) : super() {
